@@ -79,13 +79,14 @@ header .icon-menu span {
 
 header .icon-menu .span2{
     width: 20px;
-    transition: width 0.9s ease-out;
+    transition: width 1s ease-out;
 }
 
 
 header .icon-menu:hover .span2{
     width: 35px;
 }
+
 
 header .menu {
     display: flex;
@@ -138,6 +139,16 @@ header .menu .link:hover {
     line-height: 35px;
     text-align: center;
     font-weight: 400;
+}
+
+.trajectory
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: var(--section-padding);
 }
 
 
