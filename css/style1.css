@@ -49,7 +49,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding:20px 40px;
+    padding:20px 30px;
     background-color:#ffffff;
     position: relative;
     width: 100%;
@@ -112,6 +112,7 @@ header .menu .link {
     transition: transform var(--main-duration) ease-out;
 
 }
+
 
 header .menu .link:hover {
     transform: translateX(10px);
@@ -191,8 +192,8 @@ article {
     }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
     header {
-        padding:20px 100px;   
+        padding:20px 90px;   
     }
 }
