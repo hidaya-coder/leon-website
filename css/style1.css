@@ -51,6 +51,7 @@ h3 {
     margin-left: auto;
     margin-right: auto;
 }
+
 /*Small*/
 @media (min-width: 768px) {
     .container {
@@ -69,8 +70,14 @@ h3 {
         width:1170px ;
     }
 }
+ /*End ofglobal Rules*/
+ /*Start components */
+ .sepcial-heading {
+    
+ }
 
- /*end ofglobal Rules*/
+ /*end components*/
+
 
  header {
     padding: 20px;
@@ -172,7 +179,6 @@ header .menu .link:hover {
 }
 
 .hello .intro-text {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,48 +189,49 @@ header .menu .link:hover {
     height: 100%;
 }
 
-
 .hello .intro-text p
 {
     font-size: 20px;
+    font-weight: 400;
     letter-spacing: 0.7px;
     line-height: 35px;
     text-align: center;
-    font-weight: 400;
 }
+/*End Landing Section*/
 
-.trajectory {
-    width: 100%;
-    height:auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content:center;
-    gap:60px;
-    padding: var(--section-padding);
+/*Start Feastures Section*/
+.features { 
+    padding: var(--section-padding) 0;
     background-color: var(--section-background);
 }
 
-article {
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap:20px;
+}
+
+.features .container article {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 35px;
-    padding: 40px 10px ;
+    padding: 20px;
 }
 
-.icon {
+.features .container article .icon {
     width: 60px;
     height: 60px;
 }
 
-.paragh {
+.features .container article .paragh {
     text-align: center;
-    line-height: 35px;
+    line-height: 1.8;
     max-width: 350px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
-    color: #656565;
+    color: #777;
 }
+/*End Features Section*/
+/*Start Services Section*/
