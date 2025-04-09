@@ -31,6 +31,7 @@ h3 {
 
 h1 {
     font-size: 70px;
+    font-weight: bold;
 }
 
 h2 {
@@ -162,24 +163,28 @@ header .menu .link:hover {
     color: var(--main-color);
 } 
 
-
-.hello
-{
-    width: 100%;
-    height: calc(100vh - 70px);
+.hello {
     background:url("../img/landing.jpg");
     background-size: cover;
+    height: calc(100vh - 70px);
+    width: 100%;
     z-index: 0;
+}
+
+.hello .intro-text {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:20px;
     padding: var(--section-padding);
+    max-width: 100%;
+    height: 100%;
 }
 
 
-.hello p
+.hello .intro-text p
 {
     font-size: 20px;
     letter-spacing: 0.7px;
