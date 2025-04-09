@@ -73,17 +73,38 @@ h3 {
  /*End ofglobal Rules*/
  /*Start components */
  .sepcial-heading {
+    color: #ebeced;
+    font-size: 100px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -3px;
+    margin: 0;/*pour ne pas etre des especes*/ 
+}
+.sepcial-heading + p {
+    margin: -30px 0 0;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+
+}
+/*small*/
+@media (max-width: 767px) {
+    .sepcial-heading {
+        font-size: 60px;
+    }
+    .sepcial-heading + p {
+        margin-top: -20px;
+    }
     
- }
+}
+/*end components*/
 
- /*end components*/
 
-
- header {
+header {
     padding: 20px;
- }
+}
 
- header .container{
+header .container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -235,3 +256,69 @@ header .menu .link:hover {
 }
 /*End Features Section*/
 /*Start Services Section*/
+.services {
+    padding: var(--section-padding) 0;
+
+}
+
+.services .services-content {
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr)) ;/*pour avoir trois colonnes egeaux*/
+    grid-gap: 20px;
+    margin-top:100px;
+}
+
+.services .services-content .service {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+    .services .services-content .service {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.services .services-content .service i {
+    color: var(--main-color);
+    flex-basis: 60px;/*toul we 3ord*/
+}
+
+.services .services-content .service .text {
+    flex: 1;/*text y5oo mis7a moutba9aya  mt3 flex*/
+}
+
+.services .services-content .service .text p{
+    color: #444;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.services .services-content .image {
+    position: relative;
+    text-align: center;
+}
+
+.services .services-content img {
+    width: 260px;
+    height: 400px;
+}
+
+.services .services-content .image::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -50px;
+    background-color: var(--secondary-color);
+    width: 80px;
+    height: calc(100% + 100px);
+    z-index: -1;
+}
+
+@media (max-width: 1200px) {
+    .services .services-content .image {
+        display: none;
+    }
+}
+/*End Services Section*/
