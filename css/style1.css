@@ -362,5 +362,58 @@ header .menu .link:hover {
     margin-bottom: 0;
 }
 
-
 /*End Portfolio Section*/
+
+/*Start About  Section*/
+.about {
+    padding: var(--section-padding) 0 calc(var(--section-padding)+60px);
+}
+
+.about .about-content {
+    margin-top:80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about .about-content .image  {
+    position: relative;
+    width: 250px;
+    height: 375px;
+}
+
+
+.about .about-content .image::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: -40px;
+    background-color: #ebeced;
+    width: 100px;
+    height: calc(100% + 80px);
+    z-index: -1;
+}
+
+
+.about .about-content .image::after {
+    content: '';
+    position: absolute;
+    right: -150px;
+    top: -40px;
+    border-left: 80px solid var(--main-color);
+    border-bottom: 80px solid var(--main-color);
+    width: 120px;
+    height: 300px;
+    z-index: -1;
+}
+
+
+
+.about .about-content .image  img {
+    max-width: 100%;
+}
+
+
+
+/*End About6 Section*/
+
