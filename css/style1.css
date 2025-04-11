@@ -454,3 +454,56 @@ header .menu .link:hover {
 }
 /*End About Section*/
 
+/*Start contact Section*/
+.contact {
+    padding: var(--section-padding) 0;
+    background-color: var(--section-background);
+}
+
+.contact .contact-content {
+    padding: var(--section-padding) 0;
+    text-align: center;
+}
+
+.contact .contact-content .label{
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--secondary-color);
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+}
+
+.contact .contact-content a{
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--main-color);
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.contact .contact-content .social{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.contact .contact-content i{
+    color: var(--secondary-color);
+    margin-left: 20px;
+}
+
+@media (max-width: 765px) {
+    .contact .contact-content .label{
+        font-size: 25px;
+    }
+    
+    .contact .contact-content a{
+        font-size: 25px;
+    }
+}
+/*End contact Section*/
+
+
+
