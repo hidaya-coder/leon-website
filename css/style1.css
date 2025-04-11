@@ -327,3 +327,40 @@ header .menu .link:hover {
     }
 }
 /*End Services Section*/
+/*Start Portfolio Section*/
+.portfolio {
+    padding: var(--section-padding) 0;
+    background-color: var(--section-background);
+}
+
+.portfolio .portfolio-content {
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr)) ;/*pour avoir trois colonnes egeaux*/
+    grid-gap: 30px;
+    margin-top:80px;
+}
+
+.portfolio .portfolio-content .card {
+    background-color: white;
+}
+
+.portfolio .portfolio-content .card img{
+    max-width: 100%;/*pour etre comme le taille de contenu*/
+}
+
+.portfolio .portfolio-content .card .info{
+    padding: 20px;
+}
+
+.portfolio .portfolio-content .card .info h3{
+    margin: 0;
+}
+
+.portfolio .portfolio-content .card .info p{
+    line-height: 1.8;
+    color: #777;
+    margin-bottom: 0;
+}
+
+
+/*End Portfolio Section*/
