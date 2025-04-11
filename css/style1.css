@@ -474,7 +474,7 @@ header .menu .link:hover {
 }
 
 .contact .contact-content a{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 800;
     color: var(--main-color);
     letter-spacing: -2px;
@@ -504,6 +504,23 @@ header .menu .link:hover {
     }
 }
 /*End contact Section*/
+
+/*Start footer Section*/
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+footer span  {
+    color: var(--main-color);
+    font-weight: 800;
+}
+/*End footer Section*/
+
 
 
 
