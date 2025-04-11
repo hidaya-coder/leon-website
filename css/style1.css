@@ -366,7 +366,7 @@ header .menu .link:hover {
 
 /*Start About  Section*/
 .about {
-    padding: var(--section-padding) 0 calc(var(--section-padding)+60px);
+    padding: var(--section-padding) 0 100px;
 }
 
 .about .about-content {
@@ -376,12 +376,18 @@ header .menu .link:hover {
     justify-content: space-between;
 }
 
+@media (max-width: 991px) {
+    .about .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 .about .about-content .image  {
     position: relative;
     width: 250px;
     height: 375px;
 }
-
 
 .about .about-content .image::before {
     content: '';
@@ -393,7 +399,6 @@ header .menu .link:hover {
     height: calc(100% + 80px);
     z-index: -1;
 }
-
 
 .about .about-content .image::after {
     content: '';
@@ -407,13 +412,45 @@ header .menu .link:hover {
     z-index: -1;
 }
 
-
+@media (max-width: 991px) {
+    .about .about-content .image::before {
+       display: none;
+    }
+    .about .about-content .image::after {
+      display: none;
+    }
+}
 
 .about .about-content .image  img {
     max-width: 100%;
 }
 
+@media (max-width: 991px) {
+    .about .about-content .image{
+        margin: 0 auto 60px;
+    }
+    
+}
+.about .about-content .text-about  {
+    flex-basis: calc(100% - 500px);
+}
 
+.about .about-content .text-about p:first-of-type {
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 50px;
+}
 
-/*End About6 Section*/
+.about .about-content .text-about hr {
+    border-color: var(--main-color);
+    width: 50%;
+    display: inline-block;
+}
+
+.about .about-content .text-about p:last-of-type {
+    font-weight: light;
+    line-height: 2;
+    margin-top: 20px;
+}
+/*End About Section*/
 
