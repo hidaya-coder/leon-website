@@ -70,9 +70,9 @@ h3 {
         width:1170px ;
     }
 }
- /*End ofglobal Rules*/
- /*Start components */
- .sepcial-heading {
+/*End ofglobal Rules*/
+/*Start components */
+.sepcial-heading {
     color: #ebeced;
     font-size: 100px;
     font-weight: 800;
@@ -414,10 +414,10 @@ header .menu .link:hover {
 
 @media (max-width: 991px) {
     .about .about-content .image::before {
-       display: none;
+        display: none;
     }
     .about .about-content .image::after {
-      display: none;
+        display: none;
     }
 }
 
